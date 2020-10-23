@@ -50,6 +50,12 @@ if (require.has('@ember/test-helpers')) {
   };
 }
 
+// if (require.has('ember-test-helpers/wait')) {
+//   throw new Error('found ember-test-helpers/wait!');
+// } else {
+//   throw new Error('did not find ember-test-helpers/wait!');
+// }
+
 if (require.has('ember-test-helpers/wait')) {
   // This is implemented as a function that calls `ember-test-helpers/wait`
   // rather than just assigning `helpers.wait = require(...).default` because
